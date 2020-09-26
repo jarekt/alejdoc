@@ -17,6 +17,7 @@
 \RequirePackage{graphicx}
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}
+\RequirePackage{datetime2}
 
 \LoadClass[12pt, a4paper, onecolumn]{report}
 
@@ -77,7 +78,7 @@
         \@author\par
         \@class , 
         \@schoolyear\par
-        Rev. \today
+        Rev. \DTMnow
     \end{flushleft}
 }
 
