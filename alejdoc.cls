@@ -77,6 +77,7 @@
         \@author\par
         \@class , 
         \@schoolyear\par
+        Rev. \today
     \end{flushleft}
 }
 
