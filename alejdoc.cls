@@ -18,6 +18,7 @@
 \RequirePackage{fancyhdr}
 \RequirePackage{lastpage}
 \RequirePackage{datetime2}
+\RequirePackage{lmodern}
 
 \LoadClass[12pt, a4paper, onecolumn]{report}
 
