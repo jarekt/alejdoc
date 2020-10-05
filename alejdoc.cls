@@ -71,6 +71,8 @@
         \vspace{24pt}
         \if@seminarka
         {\large SEMINÁRNÍ PRÁCE\par\vspace{12pt} z předmětu \par\vspace{12pt} \@subject}\par\vspace{36pt}
+        \else
+        {\large \par\vspace{12pt} \par\vspace{12pt}}\par\vspace{36pt}
         \fi
         {\Huge \@title}
     \end{center}
