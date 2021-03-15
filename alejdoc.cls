@@ -6,7 +6,7 @@
 \newif\if@onesided
 \@onesidedtrue
 
-\DeclareOption{seminarka}{\@seminarkatrue}%add newif a \subject
+\DeclareOption{seminarka}{\@seminarkatrue}%add newif and \subject
 \DeclareOption{twoside}{\PassOptionsToClass{\CurrentOption}{report} \@onesidedfalse}
 \DeclareOption{twocolumn}{\OptionNotUsed}
 \DeclareOption*{\PassOptionsToClass{\CurrentOption}{report}}
@@ -35,6 +35,10 @@
 {
     \gdef\@subject{#1}
 }
+\newcommand*{\revNum}[1]
+{
+    \gdef\@revNum{#1}
+}
 
 \renewcommand*{\@title}
 {
@@ -61,6 +65,11 @@
     \textbackslash subject\{\}
 }
 
+\newcommand*{\@revNum}
+{
+    \textbackslash revNum\{\}
+}
+
 \renewcommand*{\maketitle}
 {
     \thispagestyle{empty}
@@ -81,7 +90,8 @@
         \@author\par
         \@class , 
         \@schoolyear\par
-        Rev. \DTMnow
+        Rev. \@revNum\par
+        \DTMnow
     \end{flushleft}
 }
 
